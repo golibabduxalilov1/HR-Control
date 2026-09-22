@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+backend/.env
+backend/uploads/
+backend/*.db
+backend/*.db-wal
+backend/*.db-shm
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# Misc
+.DS_Store
+*.log
+.idea/
+.vscode/
+
+# TS build cache
+frontend/*.tsbuildinfo
+.claude

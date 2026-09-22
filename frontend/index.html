@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <title>Face ID — Управление персоналом</title>
+    <script>
+      try {
+        var m = localStorage.getItem('faceid-theme-mode');
+        document.documentElement.classList.add(m === 'dark' ? 'dark' : 'light');
+        document.documentElement.dataset.theme = localStorage.getItem('faceid-theme') || 'arctic';
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
